@@ -8,14 +8,20 @@
 @import "base/utils";
 
 @import "components/btn-inline";
-@import "components/hotel-view/overview";
+@import "components/hotel-view/cta";
+@import "components/hotel-view/description";
 @import "components/gallery";
+@import "components/hotel-view/overview";
+@import "components/hotel-view/recommend";
+@import "components/hotel-view/reviews";
+@import "components/list";
 @import "components/search";
 @import "components/side-nav";
 @import "components/user-nav";
 
 @import "layout/app";
 @import "layout/content";
+@import "layout/detail";
 @import "layout/header";
 @import "layout/hotel-view";
 @import "layout/side-bar";

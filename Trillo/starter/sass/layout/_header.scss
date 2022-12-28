@@ -1,12 +1,18 @@
 .header {
     height: 7rem;
     background-color: white;
-    border-bottom: 1px solid var(--color-grey-light-2); 
+    border-bottom: var(--border);
     font-size: 1.4rem;
     
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media only screen and (max-width: $bp-smallest) {
+        flex-wrap: wrap;
+        height: 12rem;
+        align-content: space-around;
+    }
 }
 
 .logo {

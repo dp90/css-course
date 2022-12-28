@@ -1,0 +1,26 @@
+.description {
+    flex: 0 0 60%;
+    margin-right: 4.5rem;
+    padding: 3rem;
+
+    background-color: white;
+    box-shadow: var(--shadow-light);
+
+    font-size: 1.4rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        margin-right: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    &__text {
+        &:not(:last-of-type) {
+            margin-bottom: 1.2rem;
+        }
+    }
+}
