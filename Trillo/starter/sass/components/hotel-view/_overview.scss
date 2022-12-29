@@ -1,0 +1,73 @@
+.overview {
+    border-bottom: var(border-bottom);
+    display: flex;
+    align-items: center;
+    
+    &__heading {
+        font-size: 2.25rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 1.5rem 3rem;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.5rem;
+            padding: 1.24rem;
+        }
+    }
+    
+    &__michelin {
+        margin-right: auto;
+
+        display: flex;
+    }
+
+    &__icon {
+        height: 1.75rem;
+        width: 1.75rem;
+        fill: var(--color-primary);
+
+        &--loc {
+            margin-right: .5rem;
+        }
+    }
+
+    &__location {
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+    }
+
+    &__rating {
+        line-height: 1;
+        background-color: var(--color-primary);
+        margin-left: 3rem;
+        color: white;
+        align-self: stretch;
+        padding: 0 2.25rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @media only screen and (max-width: $bp-small) {
+            padding: 0 1.5rem;
+        }
+    }
+
+    &__grade {
+        margin-bottom: .3rem;
+        font-size: 2.25rem;
+        font-weight: 300;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__num-votes {
+        font-size: .8rem;
+        text-transform: uppercase;
+    }
+}
